@@ -12,6 +12,57 @@ minify:
   disableXML: true
   minifyOutput: true
 
+languages:
+  en:
+    languageName: ":us:"
+    weight: 1
+    menu:
+      main:
+      # - name: Archive
+      #   url: archives
+      #   weight: 5
+      - name: Search
+        url: search/
+        weight: 10
+      - name: Imprint/Privacy
+        url: imprint/
+      # - name: Tags
+      #   url: tags/
+      #   weight: 10
+      # - name: Categories
+      #   url: categories/
+      #   weight: 10
+
+  de:
+    languageName: ":de:"
+    weight: 2
+    profileMode:
+      enabled: true
+      title: Dorian Rudolph
+      subtitle: Doktorand in Quanteninformatik an der [Universität Paderborn](https://en.cs.uni-paderborn.de/qi/team/group/dorian-rudolph)
+      imageUrl: ../me.jpg
+      imageTitle: me
+      imageWidth: 300
+      imageHeight: 300
+
+    menu:
+      main:
+      # - name: Archive
+      #   url: archives
+      #   weight: 5
+      - name: Suche
+        url: search/
+        weight: 10
+      - name: Impressum/Datenschutz
+        url: imprint/
+      # - name: Tags
+      #   url: tags/
+      #   weight: 10
+      # - name: Categories
+      #   url: categories/
+      #   weight: 10
+
+
 params:
   env: production
   title: Dorian Rudolph
@@ -19,23 +70,25 @@ params:
 
   defaultTheme: auto # dark, light
   # disableThemeToggle: true
-  ShowShareButtons: true
-  ShowReadingTime: true
+  # ShowShareButtons: true
+  # ShowReadingTime: true
   # disableSpecial1stPost: true
   displayFullLangName: true
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   ShowToc: true
+  ShowAuthor: false
   # comments: false
 
-  # homeInfoParams:
-  #   Title: "Hi there \U0001F44B"
-  #   Content: Welcome to my blog
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my blog
 
   profileMode:
     enabled: true
     title: Dorian Rudolph
-    subtitle: Hello World
+    subtitle: >
+      PhD Student in Quantum Informatics <br> at [Paderborn University](https://en.cs.uni-paderborn.de/qi/team/group/dorian-rudolph)
     imageUrl: me.jpg
     imageTitle: me
     imageWidth: 300
@@ -53,3 +106,32 @@ params:
     url: "https://github.com/DorianRudolph"
   - name: RsS
     url: "index.xml"
+
+# menu:
+#   main:
+#   # - name: Archive
+#   #   url: archives
+#   #   weight: 10
+#   - name: Search
+#     url: search/
+#     weight: 40
+#   # - name: Tags
+#   #   url: tags/
+#   #   weight: 10
+#   # - name: Categories
+#   #   url: categories/
+#   #   weight: 10
+#   - name: Imprint/Privacy
+#     url: imprint/
+#     weight: 100
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+outputs:
+  home:
+  - HTML
+  - RSS
+  - JSON
