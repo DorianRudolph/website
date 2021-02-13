@@ -3,3 +3,53 @@ languageCode: en-us
 title: Dorian Rudolph
 theme: PaperMod
 
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: Dorian Rudolph
+  author: Dorian Rudolph
+
+  defaultTheme: auto # dark, light
+  # disableThemeToggle: true
+  ShowShareButtons: true
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowToc: true
+  # comments: false
+
+  # homeInfoParams:
+  #   Title: "Hi there \U0001F44B"
+  #   Content: Welcome to my blog
+
+  profileMode:
+    enabled: true
+    title: Dorian Rudolph
+    subtitle: Hello World
+    imageUrl: me.jpg
+    imageTitle: me
+    imageWidth: 300
+    imageHeight: 300
+    # buttons:
+    # - name: Archives
+    #   url: archives
+    # - name: Tags
+    #   url: tags
+
+  socialIcons:
+  - name: email
+    url: mailto:mail@dorianrudolph.com
+  - name: github
+    url: "https://github.com/DorianRudolph"
+  - name: RsS
+    url: "index.xml"
