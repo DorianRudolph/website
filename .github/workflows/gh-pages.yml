@@ -30,3 +30,4 @@ jobs:
           publish_dir: ./public
           external_repository: DorianRudolph/DorianRudolph.github.io
           publish_branch: main
+          cname: www.dorianrudolph.com
